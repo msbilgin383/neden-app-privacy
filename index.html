@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>neden? — Gizlilik Politikası / Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:    #F5F0E8;
+      --warm:     #1C1810;
+      --amber:    #D4861A;
+      --sage:     #7A9E7E;
+      --surface:  #FFFFFF;
+      --muted:    rgba(28, 24, 16, 0.42);
+      --border:   rgba(28, 24, 16, 0.08);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--cream);
+      color: var(--warm);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                   Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* ── Header ──────────────────────────────── */
+    header {
+      background-color: var(--warm);
+      color: var(--cream);
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header .app-name {
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: var(--amber);
+      letter-spacing: -0.5px;
+    }
+
+    header .tagline {
+      margin-top: 6px;
+      font-size: 1rem;
+      opacity: 0.55;
+    }
+
+    header .updated {
+      margin-top: 14px;
+      font-size: 0.82rem;
+      opacity: 0.4;
+    }
+
+    /* ── Lang nav ─────────────────────────────── */
+    .lang-nav {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding: 20px 24px;
+      background-color: var(--cream);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .lang-nav a {
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--muted);
+      padding: 6px 20px;
+      border-radius: 20px;
+      border: 1.5px solid var(--border);
+      transition: all 0.2s;
+    }
+
+    .lang-nav a:hover,
+    .lang-nav a.active {
+      background-color: var(--amber);
+      color: #fff;
+      border-color: var(--amber);
+    }
+
+    /* ── Main ─────────────────────────────────── */
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    /* ── Section ──────────────────────────────── */
+    .policy-section {
+      padding-top: 56px;
+    }
+
+    .section-lang-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--amber);
+      background-color: rgba(212, 134, 26, 0.1);
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      margin-bottom: 32px;
+      color: var(--warm);
+      line-height: 1.25;
+    }
+
+    /* ── Card ─────────────────────────────────── */
+    .card {
+      background-color: var(--surface);
+      border-radius: 20px;
+      padding: 28px 28px 24px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 16px rgba(28, 24, 16, 0.06);
+    }
+
+    .card-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--warm);
+    }
+
+    .card-title .icon {
+      font-size: 1.3rem;
+      line-height: 1;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+
+    .card p:last-child { margin-bottom: 0; }
+
+    /* ── Highlight pill ───────────────────────── */
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-top: 4px;
+    }
+
+    .pill-green {
+      background-color: rgba(122, 158, 126, 0.12);
+      color: var(--sage);
+    }
+
+    .pill-amber {
+      background-color: rgba(212, 134, 26, 0.10);
+      color: var(--amber);
+    }
+
+    /* ── Divider ──────────────────────────────── */
+    .section-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 56px 0 0;
+    }
+
+    /* ── Contact ──────────────────────────────── */
+    .contact-link {
+      color: var(--amber);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-link:hover { text-decoration: underline; }
+
+    /* ── Footer ───────────────────────────────── */
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 0.82rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Header ──────────────────────────────────────────────────────────── -->
+<header>
+  <div class="app-name">neden?</div>
+  <div class="tagline">Alışkanlık Takip Uygulaması · Habit Tracker</div>
+  <div class="updated">Son güncelleme / Last updated: 1 Mart 2025 · March 1, 2025</div>
+</header>
+
+<!-- ── Language nav ─────────────────────────────────────────────────────── -->
+<nav class="lang-nav" aria-label="Language / Dil">
+  <a href="#turkish">🇹🇷 Türkçe</a>
+  <a href="#english">🇬🇧 English</a>
+</nav>
+
+<main>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- TÜRKÇE                                                              -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <section id="turkish" class="policy-section">
+    <span class="section-lang-badge">Türkçe</span>
+    <h1 class="section-title">Gizlilik Politikası</h1>
+
+    <!-- Genel -->
+    <div class="card">
+      <div class="card-title">
+        <span class="icon">🔐</span>
+        Gizliliğinize Saygı Duyuyoruz
+      </div>
+      <p>
+        <strong>neden?</strong> uygulaması kişisel verilerinize değer verir ve gizliliğinizi
+        ön planda tutar. Bu politika, uygulamamızı kullanırken hangi verilerin işlendiğini
+        açıkça ortaya koymaktadır.
+      </p>
+    </div>
+
+    <!-- Kişisel veri yok -->
+    <div class="card">
+      <div class="card-title">
+        <span class="icon">🚫</span>
+        Kişisel Veri Toplanmaz
+      </div>
+      <p>
+        Uygulama; ad, e-posta, konum, kimlik gibi <strong>hiçbir kişisel veriyi</strong>
+        toplamamakta, kaydetmemekte veya paylaşmamaktadır.
+      </p>
+      <span class="pill pill-green">✓ Veri toplanmıyor</span>
+    </div>
+
+    <!-- Yerel depolama -->
+    <div class="card">
+      <div class="card-title">
+        <span class="icon">📱</span>
+        Veriler Yalnızca Cihazınızda Saklanır
+      </div>
+      <p>
+        Oluşturduğunuz alışkanlıklar, tamamlama kayıtları ve motivasyon notlarınız
+        <strong>yalnızca cihazınızda</strong> yerel olarak saklanır. Bu veriler herhangi
+        bir sunucuya aktarılmaz.
+      </p>
+      <p>
+        Yerel depolama için <strong>Hive</strong> kütüphanesi kullanılmaktadır.
+        Uygulamayı sildiğinizde tüm veriler cihazınızdan kalıcı olarak silinir.
+      </p>
+      <span class="pill pill-green">✓ Sunucuya gönderilmiyor</span>
+    </div>
+
+    <!-- RevenueCat -->
+    <div class="card">
+      <div class="card-title">
+        <span class="icon">💳</span>
+        Üçüncü Taraf Hizmet: RevenueCat
+      </div>
+      <p>
+        Abonelik ve satın alma işlemlerini yönetmek amacıyla
+        <strong>RevenueCat</strong> hizmetini kullanmaktayız. RevenueCat yalnızca
+        abonelik durumunuzu (aktif / pasif) doğrulamak için gerekli teknik
+        bilgileri işlemektedir.
+      </p>
+      <p>
+        RevenueCat'in gizlilik politikasına buradan ulaşabilirsiniz:
+        <a class="contact-link"
+           href="https://www.revenuecat.com/privacy"
+           target="_blank" rel="noopener">revenuecat.com/privacy</a>
+      </p>
+      <span class="pill pill-amber">⚡ Yalnızca abonelik yönetimi</span>
+    </div>
+
+    <!-- Çocuklar -->
+    <div class="card">
+      <div class="card-title">
+        <span class="icon">👶</span>
+        Çocukların Gizliliği
+      </div>
+      <p>
+        Bu uygulama bilinçli olarak 13 yaşın altındaki çocuklardan veri toplamamaktadır.
+        Kişisel veri toplanmadığından bu konuda ek bir risk bulunmamaktadır.
+      </p>
+    </div>
+
+    <!-- İletişim -->
+    <div class="card">
+      <div class="card-title">
+        <span class="icon">✉️</span>
+        İletişim
+      </div>
+      <p>
+        Gizlilik politikamız hakkında sorularınız için:
+        <a class="contact-link" href="mailto:msbilgin383@gmail.com">msbilgin383@gmail.com</a>
+      </p>
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- ENGLISH                                                             -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <section id="english" class="policy-section">
+    <span class="section-lang-badge">English</span>
+    <h2 class="section-title">Privacy Policy</h2>
+
+    <!-- General -->
+    <div class="card">
+      <div class="card-title">
+        <span class="icon">🔐</span>
+        We Respect Your Privacy
+      </div>
+      <p>
+        <strong>neden?</strong> is committed to protecting your privacy. This policy
+        explains clearly what data is processed when you use our app.
+      </p>
+    </div>
+
+    <!-- No personal data -->
+    <div class="card">
+      <div class="card-title">
+        <span class="icon">🚫</span>
+        No Personal Data Collected
+      </div>
+      <p>
+        The app does <strong>not</strong> collect, store, or share any personal
+        information such as your name, email address, location, or device identifiers.
+      </p>
+      <span class="pill pill-green">✓ No data collected</span>
+    </div>
+
+    <!-- Local storage -->
+    <div class="card">
+      <div class="card-title">
+        <span class="icon">📱</span>
+        All Data Stays on Your Device
+      </div>
+      <p>
+        Your habits, completion logs, and motivation notes are stored
+        <strong>locally on your device only</strong>. None of this information is
+        transmitted to any server.
+      </p>
+      <p>
+        Local storage is handled by the <strong>Hive</strong> library. Uninstalling
+        the app permanently removes all data from your device.
+      </p>
+      <span class="pill pill-green">✓ Never sent to a server</span>
+    </div>
+
+    <!-- RevenueCat -->
+    <div class="card">
+      <div class="card-title">
+        <span class="icon">💳</span>
+        Third-Party Service: RevenueCat
+      </div>
+      <p>
+        We use <strong>RevenueCat</strong> solely to manage in-app subscriptions
+        and purchases. RevenueCat processes only the technical information required
+        to verify your subscription status (active / inactive).
+      </p>
+      <p>
+        You can review RevenueCat's privacy policy at:
+        <a class="contact-link"
+           href="https://www.revenuecat.com/privacy"
+           target="_blank" rel="noopener">revenuecat.com/privacy</a>
+      </p>
+      <span class="pill pill-amber">⚡ Subscription management only</span>
+    </div>
+
+    <!-- Children -->
+    <div class="card">
+      <div class="card-title">
+        <span class="icon">👶</span>
+        Children's Privacy
+      </div>
+      <p>
+        This app does not knowingly collect personal data from children under the
+        age of 13. Since no personal data is collected at all, there is no
+        additional risk in this regard.
+      </p>
+    </div>
+
+    <!-- Contact -->
+    <div class="card">
+      <div class="card-title">
+        <span class="icon">✉️</span>
+        Contact
+      </div>
+      <p>
+        If you have any questions about this privacy policy, please reach out:
+        <a class="contact-link" href="mailto:msbilgin383@gmail.com">msbilgin383@gmail.com</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── Footer ───────────────────────────────────────────────────────────── -->
+<footer>
+  <strong>neden?</strong> &nbsp;·&nbsp; Gizlilik Politikası / Privacy Policy
+  &nbsp;·&nbsp; © 2025
+</footer>
+
+</body>
+</html>
